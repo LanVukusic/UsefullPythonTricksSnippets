@@ -9,6 +9,7 @@ my cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 	'{0:b}'.format(2)
 ```
 returns 10
+*It strips leading zeros so be carefull*
 ***
 
 ### 2.
