@@ -37,28 +37,23 @@ returns:
 #### 4. Appending to a list
 *we have a list called **myList** and a variable **a**, that we wuld like to add to a list*
 ```python
-myList = [1, 2, 3, 4, 5]
-a = 5
-	
-myList.append(a) # If we would like to add it to the end, we would do it like that*
-	
-myList.insert(0, a) # If we would like to insert it to the spacific index, we would do it like that*
+	myList = [1, 2, 3, 4, 5]
+	a = 6
+
+	myList.append(a) # If we would like to add it to the end, we would do it like that*	
+	myList.insert(0, a) # If we would like to insert it to the spacific index, we would do it like that*
+
+	myList.remove(2)
+	del myList[4]
+	print(myList.pop(-1))
 ```  
-*If we would like to remove item from **myList**, that options would do *  
-```python
-myList = [1, 2, 3, 1, 2, 3]	
-myList.remove(2)
-``` 
-* **remove()** removes the first element in list that satisfies the selection. in that case, it would return **[1, 3, 1, 2, 3]** *  
-```python
-myList = [1, 2, 3, 1, 2, 3]	
-del myList[4]
-```  
-* **del** removes the element at spacific index. in that case, it would return **[1, 2, 3, 1, 3]** *  
-```python
-myList = [1, 2, 3, 1, 2, 3]	
-print(myList.pop(4))
-```  
+ * **.append(x)** adds element **x** to the end of the list. In that case **[1, 2, 3, 4, 5, 6]**.
+ * **.insert(x,y)** adds element **x** to the **y** index of the list. In that case **[6, 1, 2, 3, 4, 5]**.
+
+* **.remove(x)** removes the first **x** in list. In that case, it would return **[1, 3, 1, 2, 3]**.   
+
+* **del** removes the element at spacific index. in that case, it would return **[1, 2, 3, 1, 3]** 
+
+* **.pop(x)** is basically same as remove, but it returns the poped element.   
 returns: 3
-* **pop()** is basically same as remove, but it returns the poped element. * 
 ***
