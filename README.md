@@ -8,7 +8,7 @@ my cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 ```python
 	'{0:b}'.format(2)
 ```
-returns 10  
+Returns 10  
 *It strips leading zeros so be carefull*
 ***
 
@@ -16,7 +16,7 @@ returns 10
 ```python
 	"hello"[::-1]
 ```
-returns "olleh".  
+Returns "olleh".  
 *[x:y:z] selects subset where **x** is starting point(inclusive), **y** is ending point (exclusive) and **z** is a step.
 if step is negative, the traversial is inverted.*
 
@@ -28,7 +28,7 @@ if step is negative, the traversial is inverted.*
 	print(__file__)
 	print(__name__)
 ```
-returns:  
+Returns:  
 "C:/PythonProjects/python.py"  
 "\_\_main__" if we are running the script directly, and not calling it as an import for example.  
 
@@ -55,5 +55,15 @@ returns:
 * **del** removes the element at spacific index. in that case, it would return **[1, 2, 3, 1, 3]** 
 
 * **.pop(x)** is basically same as remove, but it returns the poped element.   
-returns: 3
+Returns: 3
+***
+
+#### 5. Reverse iteration
+*it actually iterates reversely and is not changing the iterative item itself*
+```python
+	myList = [1, 2, 3, 4, 5]
+	for i in range(len(myList)-1, -1, -1):
+		print(myList[i])
+``` 
+Prints: 5 4 3 2 1
 ***
