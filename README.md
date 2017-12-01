@@ -21,3 +21,15 @@ returns "olleh".
 if step is negative, the traversial is inverted.*
 
 ***
+
+#### 3. Special functions -MAGIC-
+*we are in a file named python.py*
+```python
+	print(__file__)
+	print(__name__)
+```
+returns:  
+"C:/PythonProjects/python.py"  
+"\_\_main__" if we are running the script directly, and not calling it as an import for example.  
+
+***
