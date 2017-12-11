@@ -66,4 +66,15 @@ Returns: 3
 		print(myList[i])
 ``` 
 Prints: 5 4 3 2 1
-***
+***  
+#### 6. Christmas tree with format
+```python
+	for i in range (1, 10, 2):
+    		print("{:-^20}".format("X"*i))
+``` 
+Prints:  
+---------X----------  
+--------XXX---------  
+-------XXXXX--------  
+------XXXXXXX-------  
+-----XXXXXXXXX------  
