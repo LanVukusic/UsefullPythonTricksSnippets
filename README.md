@@ -78,3 +78,13 @@ Prints:
 -------XXXXX--------  
 ------XXXXXXX-------  
 -----XXXXXXXXX------  
+
+#### 7. Library version
+```python
+	import lalala as a
+	print(a.__version__)
+``` 
+Prints:
+1.0.0
+
+
