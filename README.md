@@ -4,9 +4,11 @@ A list od trikcs and snippets i find usefull
 my cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 ***
 
-#### 1. Returns a binary from an int
+#### 1. Returns a decoded base
 ```python
-	'{0:b}'.format(2)
+	{0:b}".format(100) # bin: 1100100
+	{0:x}".format(100) # hex: 64
+	{0:o}".format(100) # oct: 144
 ```
 Returns 10  
 *It strips leading zeros so be carefull*
